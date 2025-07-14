@@ -9,7 +9,7 @@ export const blogData = [
     id: 1,
     title: 'A história do badminton pela minha perspectiva',
     date: '2024-10-09',
-    author: 'Bruno Kay Kawano',
+    author: 'Bruno Key Kawano',
     authorImage: BrunoImg,
     content: `
       <p>A forma como o Badminton foi fundado é uma das minhas partes favoritas da história da modalidade. Logo que entramos na USP já queríamos fundar a modalidade, mas a ideia morreu rápido, faltou motivação. Depois da pandemia, voltei a jogar junto com o William e um dia aleatório, do nada, virei pra ele e disse “Bora fundar o badminton? A gente conhece o cara que pode nos passar o contato do diretor das modalidades esportivas da Poli. Vou mandar uma mensagem pra ele agora.”, e assim se abriu a modalidade na USP. Acho que realmente o que faltava era só esse último passo: tomar uma atitude que fez com que não tivesse mais volta, formalizar a modalidade na universidade.</p>

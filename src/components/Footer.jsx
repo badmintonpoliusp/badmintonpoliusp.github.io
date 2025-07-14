@@ -164,7 +164,7 @@ function Footer() {
         <p id="copyright">
           {isMobile ? (
             <>
-              © 2025 Badminton Poli-USP
+              © 2025 Badminton Poli-Usp
               <br />
               Desenvolvido por{' '}
               <Link to="/projeto-marco-zero">Projeto Marco Zero</Link>
