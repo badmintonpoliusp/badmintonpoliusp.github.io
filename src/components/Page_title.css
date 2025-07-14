@@ -1,0 +1,26 @@
+.title_container {
+  margin: auto 1rem;
+  text-align: center;
+}
+
+.title_container h1 {
+  color: #0a2342;
+  font-weight: 600;
+  display: inline-block;
+  max-width: 100%;
+  
+  font-size: 1.7rem;
+  @media (min-width: 480px) {
+    font-size: min(7vw, 2.5rem);
+  }
+  
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  
+  @media (max-width: 479px) {
+    white-space: normal;
+    display: block;
+    line-height: 1.2;
+  }
+}

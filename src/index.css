@@ -1,0 +1,28 @@
+/* src/index.css */
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif; 
+}
+
+/* This targets the root div where your React app is mounted */
+#root {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+/* Tell the main content area to grow and fill all available space */
+.main-content {
+  flex-grow: 1;
+}
+
+/* Global custom cursor */
+body, * {
+  cursor: url('assets/images/icons/racket-icon.cur') 0 0, auto;
+}
+
+/* Override for links and buttons */
+a, button {
+  cursor: url('assets/images/icons/shuttlecock-icon.cur'), pointer;
+}

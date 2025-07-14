@@ -1,0 +1,119 @@
+.resultados-wrapper {
+  display: flex;
+  justify-content: center;
+  margin: 20px auto;
+  width: 100%;
+}
+
+.abrir-btn {
+  background-color: hsl(214, 95%, 30%);
+  color: white;
+  border: none;
+  padding: 12px 24px;
+  font-size: clamp(14px, 3vw, 16px);
+  font-weight: 600;
+  border-radius: 50px;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  width: auto;
+  max-width: 100%;
+}
+
+.popup-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.7);
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 20px 0;
+  z-index: 1000;
+  overflow-y: hidden; /* Atualizado: evitar rolagem dupla */
+}
+
+.popup-content {
+  background-color: white;
+  padding: 20px;
+  border-radius: 10px;
+  width: 90%;
+  max-width: 1000px;
+  max-height: 90vh;
+  overflow-y: auto;
+  position: relative;
+  margin: 0 auto;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+}
+
+.tabela-resultados {
+  width: 100%;
+  border-collapse: collapse;
+  font-family: 'Segoe UI', sans-serif;
+  font-size: clamp(12px, 2vw, 14px);
+  color: #222;
+  background-color: white;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.tabela-resultados th,
+.tabela-resultados td {
+  border: 1px solid #ddd;
+  padding: 8px 10px;
+  text-align: center;
+  vertical-align: middle;
+  word-break: break-word;
+}
+
+.tabela-resultados th {
+  background-color: hsl(214, 95%, 20%);
+  color: white;
+  font-weight: 600;
+  font-size: clamp(11px, 2vw, 13px);
+}
+
+
+@media (max-width: 768px) {
+  .popup-content {
+    padding: 15px;
+    width: 95%;
+  }
+
+  .tabela-resultados th,
+  .tabela-resultados td {
+    padding: 6px 8px;
+    font-size: 12px;
+  }
+}
+
+@media (max-width: 480px) {
+  .popup-content {
+    padding: 10px;
+    width: 98%;
+  }
+
+  .tabela-resultados {
+    display: block;
+    overflow-x: auto;
+    white-space: nowrap;
+    -webkit-overflow-scrolling: touch;
+  }
+
+  .abrir-btn {
+    padding: 10px 20px;
+    font-size: 14px;
+  }
+}
+
+@media (hover: hover) {
+  .abrir-btn:hover {
+    background-color: hsl(214, 95%, 25%);
+    transform: translateY(-2px);
+  }
+
+}

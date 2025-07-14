@@ -1,0 +1,164 @@
+.MZ-container {
+    max-width: 80%;
+    margin: 0 5%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content:center;
+    box-sizing: border-box;
+}
+
+.MZ-logo {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    flex: 0 1 45%;
+}
+
+.MZ-logo img {
+    max-width: 100%;
+    display: block;
+}
+
+.MZ-description {
+    display: flex;
+    flex: 0 1 45%;
+    justify-content: center;
+    align-items: center;
+    line-height: 1.6;
+    color: #333;
+}
+
+.MZ-description p {
+    text-indent: 3mm;
+    text-align: justify;
+    margin: 0;
+}
+
+.members-container {
+    max-width: 80%;
+    margin: 0 10% 5% 10%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+}
+
+.member-card {
+    flex: 0 1 calc(26.666% - 40px*2/3); /* flex: grow, shrink, basis */
+    box-sizing: border-box;
+    /* margin: 10px; */
+    padding: 10px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+
+
+@media (max-width: 768px) {
+    .MZ-container {
+        max-width: 100%;
+        flex-direction: column;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        margin: 0 10%;
+    }
+/* 
+    .Mz-description {
+        padding: 0 5%;
+    } */
+
+    .MZ-description p {
+        padding: 0 5%;
+        text-indent: 3mm;
+        text-align: justify; 
+    }
+}
+
+
+/* 
+@media (max-width: 768px) {
+    .MZ_container {
+        flex-direction: column;
+        align-items: center;
+        padding: 20px 5% 5% 5%;
+        gap: 30px;
+    }
+
+    .Logo,
+    .description {
+        width: 100%;
+        padding: 0;
+        justify-content: center;
+    }
+
+    .Logo img {
+        max-width: 60%;
+    }
+
+    .description p {
+        text-align: justify; 
+        padding: 0 10px;
+    }
+}
+
+
+@media (max-width: 480px) {
+    .MZ_container {
+        padding: 15px 3% 5% 3%;
+        gap: 20px;
+    }
+    .description {
+        font-size: 0.9em;
+    }
+    .description p {
+        text-align: justify; 
+    }
+} */
+
+/* ALTERNATIVA 2: Estilo Suave e Interativo */
+
+.member-card {
+  /* Layout e Alinhamento */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  
+  /* Espaçamento e Fundo (invisível por padrão) */
+  padding: 20px;
+  background-color: transparent; /* Fundo transparente */
+  border-radius: 15px;
+  box-shadow: none; /* Sem sombra por padrão */
+  
+  /* Animação suave */
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.member-card:hover {
+  background-color: #ffffff; /* Fundo aparece no hover */
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.12); /* Sombra aparece no hover */
+}
+
+.member-photo {
+  /* Tamanho e Formato */
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  object-fit: cover;
+  
+  /* Espaçamento e Borda (substituindo o anel amarelo por um cinza sutil) */
+  margin-bottom: 15px;
+  border: 3px solid #dadadf; /* Borda cinza bem clara */
+}
+
+.member-name {
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: #0a2342;
+  margin: 0;
+}

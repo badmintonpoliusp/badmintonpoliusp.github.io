@@ -1,0 +1,139 @@
+/* src/components/Header.css */
+
+.app-header {
+  position: sticky;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 40px;
+  background-color: #011d42;
+  color: white;
+  font-family: Arial, sans-serif;
+  height: 80px;
+}
+
+/* Make the entire logo area a flex container */
+.logo-container {
+  display: flex;
+  align-items: center;
+  height: 100%;
+  text-decoration: none; /* Remove link underline */
+  color: inherit; /* Inherit color from header */
+}
+
+/* Constrain the logo image */
+.logo {
+  height: 60px; /* Set a fixed height */
+  width: auto;
+  margin-right: 15px;
+  object-fit: contain;
+  cursor: url('/src/assets/images/icons/shuttlecock-icon.cur'), pointer;
+}
+
+/* Clean hyperlink styling from logo text */
+.logo-text {
+  font-size: 1.8em;
+  font-weight: bold;
+  text-decoration: none;
+  color: white; /* Explicitly set text color */
+  cursor: url('/src/assets/images/icons/shuttlecock-icon.cur'), pointer;
+}
+
+/* Remove link effects from logo link wrapper */
+.logo-link {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  color: inherit;
+}
+
+/* Navigation links */
+.nav-links {
+  display: flex;
+  align-items: center;
+  height: 100%;
+}
+
+.nav-links ul {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-links li {
+  margin-left: 30px;
+}
+
+.nav-links a {
+  color: white;
+  text-decoration: none;
+  font-size: 1.25em;
+}
+
+/* Hamburger menu icon (mobile only) */
+.menu-icon {
+  display: none;
+  font-size: 1.8rem;
+  cursor: pointer;
+}
+
+/* --- Responsive Styles --- */
+@media (max-width: 768px) {
+  .app-header {
+    padding: 0 20px;
+  }
+
+  .logo-text {
+    font-size: 1.4em;
+  }
+
+  .logo {
+    height: 50px;
+  }
+
+  .nav-links {
+    display: none;
+    position: absolute;
+    top: 80px;
+    left: 0;
+    width: 100%;
+    background-color: #0a2342;
+    flex-direction: column;
+    align-items: center;
+    height: auto;
+    padding-bottom: 20px;
+  }
+
+  .nav-links.active {
+    display: flex;
+  }
+
+  .nav-links ul {
+    flex-direction: column;
+    width: 100%;
+    height: auto;
+  }
+
+  .nav-links li {
+    margin: 15px 0;
+    margin-left: 0;
+    text-align: center;
+    width: 100%;
+  }
+
+  .nav-links a {
+    font-size: 1.4em;
+  }
+
+  .menu-icon {
+    display: block;
+  }
+}

@@ -1,0 +1,165 @@
+:root {
+  --primary: #0a2342;
+  --secondary: #f1c40f;
+  --light: #f8f9fa;
+  --dark: #212529;
+}
+
+/* General container */
+.slider-container {
+  position: relative;
+  margin: 0 auto;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  max-width: 800px;
+}
+
+.slider-container.expanded {
+  max-width: 50%;
+}
+
+/* Each slide */
+.slide-wrapper {
+  position: relative;
+}
+
+/* Image container with aspect ratio */
+.image-container {
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  overflow: hidden;
+  background-color: #f8f9fa;
+}
+
+.image-container.expanded {
+  aspect-ratio: 3 / 2;
+}
+
+.slider-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  display: block;
+}
+
+/* Caption overlay */
+.image-caption {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background: rgba(10, 35, 66, 0.6);
+  color: white;
+  padding: 12px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.image-title {
+  margin: 0;
+  font-size: 1rem;
+  font-weight: 600;
+}
+
+.slide-counter {
+  font-size: 0.9rem;
+  opacity: 0.8;
+}
+
+/* Arrows */
+.slick-arrow {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 2;
+  background: rgba(10, 35, 66, 0.7);
+  border: none;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  color: white;
+  display: flex !important;
+  align-items: center;
+  justify-content: center;
+  cursor: url('/src/assets/images/icons/shuttlecock-icon.cur'), pointer;
+  transition: background 0.3s;
+}
+
+.slick-arrow:hover {
+  background: var(--secondary);
+  color: var(--primary);
+}
+
+.slick-arrow svg {
+  width: 20px;
+  height: 20px;
+}
+
+.prev-arrow {
+  left: 16px;
+}
+
+.next-arrow {
+  right: 16px;
+}
+
+/* Dots */
+.slick-dots {
+  bottom: 15px;
+}
+
+.slick-dots li button {
+  width: 10px;
+  height: 10px;
+  background: white;
+  border-radius: 50%;
+  opacity: 0.5;
+  transition: all 0.3s ease;
+}
+
+.slick-dots li.slick-active button {
+  opacity: 1;
+  background: var(--secondary);
+}
+
+/* Placeholder state */
+.slider-placeholder {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 300px;
+  background: #e9ecef;
+  color: #495057;
+  text-align: center;
+}
+
+.placeholder-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.placeholder-icon {
+  font-size: 2rem;
+  margin-bottom: 0.5rem;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .slider-container.expanded {
+    max-width: 95%;
+  }
+
+  .slick-arrow {
+    width: 30px;
+    height: 30px;
+  }
+
+  .slick-arrow svg {
+    width: 18px;
+    height: 18px;
+  }
+}

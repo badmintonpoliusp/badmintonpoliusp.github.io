@@ -1,0 +1,39 @@
+/* Aplicando box-sizing globalmente para todos os elementos */
+* {
+    box-sizing: border-box;
+}
+
+.supporters-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 20px auto;
+    background-color: #fff; 
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    padding: 15px; 
+    border-radius: 12px;
+    width: 95%;
+    max-width: 1200px; 
+}
+
+.section-title{
+    color: #2c3e50;
+    font-size: 1.8rem;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.Logo{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+}
+
+.Logo img {
+    max-height: 50px; 
+    width: auto;
+    margin: 10px 0;
+}

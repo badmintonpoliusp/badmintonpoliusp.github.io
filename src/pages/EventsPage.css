@@ -1,0 +1,35 @@
+.resultados-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.eventos-container{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+
+.Title-result{
+    color: #0a2342;
+    height: 125px;
+    display: flex;
+    flex-direction: column;
+    margin-top: 30px;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.Title-result h1{
+  margin-bottom: 0;
+}
+
