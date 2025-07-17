@@ -21,6 +21,7 @@ Next, install all the necessary packages for the project.
 
 npm install
 npm install react-router-dom react-icons react-slick slick-carousel
+npm install gh-pages --save-dev
 
 
 3. Run the Project

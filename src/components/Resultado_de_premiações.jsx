@@ -55,6 +55,7 @@ const ResultadosPopup = () => {
                 <tr><td>1ª COPA SANTISTA DE BADMINTON (JULHO 2025)</td><td>LUCAS BOPP</td><td>POLI</td><td>SIMPLES C</td><td>3º LUGAR</td></tr>
                 <tr><td>1ª COPA SANTISTA DE BADMINTON (JULHO 2025)</td><td>LUCAS BOPP <br /> GABRIEL FERIGATO</td><td>POLI <br /> FÍSICA</td><td>DUPLA C</td><td>3º LUGAR</td></tr>
                 <tr><td>1ª COPA SANTISTA DE BADMINTON (JULHO 2025)</td><td>ERIC MIURA <br /> PEDRO KOCH</td><td>FARMA <br />POLI</td><td>DUPLA C</td><td>3º LUGAR</td></tr>
+                <tr><td>INTERCOLONIAL NIPPON (JULHO 2025)</td><td>BRUNO KAWANO <br /> WILLIAM FUKUSHIMA</td><td>POLI <br />POLI</td><td>DUPLA B</td><td>2º LUGAR</td></tr>
               </tbody>
             </table>
           </div>
