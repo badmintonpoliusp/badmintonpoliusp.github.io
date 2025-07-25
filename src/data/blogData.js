@@ -2,7 +2,8 @@
 
 import BrunoImg from '../assets/images/profile/Bruno.png';
 import HenriqueImg from '../assets/images/profile/Henrique.png';
-import HuaImg from "../assets/images/profile/Hua.png"
+import HuaImg from "../assets/images/profile/Hua.png";
+import PieriniImg from "../assets/images/profile/edu-pierini.jpg";
 
 export const blogData = [
   {
@@ -46,5 +47,18 @@ export const blogData = [
     <p>Recentemente, me despedi do cargo, mas posso afirmar que recebi tanto quanto deixei.</p>
   `
   },
+  {
+    id: 4,
+    title: "Minha trajetória como atleta profissional",
+    date: "2025-07-19",
+    author: "Eduardo Pierini",
+    authorImage: PieriniImg,
+    content: `
+    <p>Conheci o badminton em 2016 quando meu pai e meu tio descobriram o esporte por acidente no Esporte Clube Pinheiros. </p>
+    <p>Desde então não parei de jogar, participei de diversos campeonatos, desde estaduais a pan-americanos. Como atleta, a rotina é naturalmente puxada, com treinos técnicos e físicos diários, mas o mais difícil é conciliar a vida atlética e acadêmica, principalmente em época de campeonatos. </p>
+    <p>Hoje em dia tenho uma coleção de medalhas, experiências, aprendizados e amizades que tive nesses quase 10 anos de badminton. O campeonato mais marcante pra mim foi o Pan-americano Jr. de 2022, em Santo Domingo, República Dominicana, no qual, no auge dos meus 16 anos tive que viajar sozinho pela primeira vez, tive que aprender a me virar sozinho e , na minha primeira participação na seleção Jr., conquistamos a medalha de bronze no campeonato por equipes pelo Brasil. <p>
+    <p>Atualmente jogo pelo Esporte Clube Pinheiros e estou no segundo ano de engenharia ambiental na Poli-USP.</p>
+  `
+  }
 ];
 
