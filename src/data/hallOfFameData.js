@@ -20,7 +20,7 @@ export const hallOfFameData = [
   },
   {
     id: 2,  
-    name: 'William Fukishima',
+    name: 'William Fukushima',
     year: '(2017 - 2020)',
     imageUrl: WilliamImg, 
     title: 'Pai do Badpoli',
