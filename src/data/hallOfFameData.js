@@ -51,7 +51,7 @@ export const hallOfFameData = [
     name: 'Eduardo Pierini',
     year: '(2023 - 2024)',
     imageUrl: pieriniImg, 
-    title: 'IA de Pinheiros',
+    title: 'IA do Pinheiros',
     introduction: 'Para alguns, é conhecido como o "pró", para outros, tratava-se de uma mera invenção. Ninguém sabe ao certo se essa figura existia ou não até a recepção dos bixos em 2025.  Os quatrocentos smashes que ele deus nos bixos fez acreditar que realmente há um abismo entre nós, os meros mortais, com os semideuses do badminton. Sua presença é sentida em cada treino, mesmo que ele não esteja lá fisicamente.',
   },
   // Adicionar mais pessoas aqui

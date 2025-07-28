@@ -34,7 +34,7 @@ export const blogData = [
   },
   {
     id: 3,
-    title: "Relato de um ex-diretor de modalidade",
+    title: "Relato de um ex-diretor da modalidade",
     date: '2025-07-09',
     author: "Hua Hua Cao",
     authorImage: HuaImg,
